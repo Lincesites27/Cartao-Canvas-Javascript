@@ -10,6 +10,77 @@
     <title>Gerador automatico Canvas</title>
 </head>
 <body>
-    
+
+    <div class="container-left">
+        <label>
+            <p>Nome do titular</p>
+            <input type="text" id="inputNome">
+        </label>
+        <label>
+            <p>Numero do cartão</p>
+            <input type="number" id="inputCard">
+        </label>
+
+        <div class="infos">
+            <label>
+                <p>Data de validade</p>
+                <input type="date" id="inputData">
+            </label>
+            <label>
+                <p>CVV</p>
+                <input type="number" id="inputCvv">
+            </label>
+
+            <div class="selecao-cores">
+                <p>Selecione a cor de fundo de sua aplicação</p>
+                <div class="cores">
+                    <span class="cor cor1" id="cor1">1</span>
+                    <span class="cor cor2" id="cor2">2</span>
+                    <span class="cor cor3" id="cor3">3</span>
+                    <span class="cor cor4" id="cor4">4</span>
+                    <span class="cor cor5" id="cor5">5</span>
+                    <span class="cor cor6" id="cor6">6</span>
+                    <span class="cor cor7" id="cor7">7</span>
+                </div>
+            </div>
+
+            <button class="btn" id="gerarImg">Baixar Imagem</button>
+ 
+        </div>
+
+
+    </div>
+
+    <div class="container-right">
+        <h1>Nunca foi tão fácil</h1>
+        <h3>Armazenar os seus dados!</h3>
+
+        <div class="dados-cadastro">
+            <p>Nome completo</p>
+            <h5 id="outputNome">Maykon Melo da Conceição</h5>
+        </div>
+        <div class="dados-cadastro">
+            <p>Numero do cartão</p>
+            <h5 id="outputCard">0000 0000 0000 0000</h5>
+        </div>
+        <div class="dados-cadastro flex">
+            <div> 
+                <p>Data de validade</p>
+                <h5 id="outputData">20/01/2023</h5>
+            </div>
+            <div> 
+                <p>CVV</p>
+                <h5 id="outputCvv">428</h5>
+            </div>
+           
+        </div>
+
+        <div class="ilustrativo">
+            <h2>DADOS MERAMENTE ILUSTRATIVOS</h2>
+        </div>
+
+        <img src="./img/cadeado.png" alt="" srcset="">
+
+    </div>
 </body>
 </html>
