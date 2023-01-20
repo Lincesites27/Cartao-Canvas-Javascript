@@ -126,6 +126,7 @@ textarea:focus, input:focus{
     background-color: var(--back-segundo);
     color: var(--txt-segundo);
     padding: 50px 75px;
+    
 }
 
 .container-right h1{
@@ -194,4 +195,25 @@ textarea:focus, input:focus{
  }
  .container-right.cor7{
     background-color: var(--back-oitavo);
+ }
+
+ @media(max-width:1400px){
+    body{
+        flex-direction: column;
+        overflow-y: auto;
+    }
+ }
+
+ @media(max-width:500px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .container-right{
+        overflow-y: auto;
+        margin-left: 500px;
+    }
+    .container-left{
+        margin: 8px;
+    }
  }
