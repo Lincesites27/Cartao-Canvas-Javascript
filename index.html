@@ -12,46 +12,47 @@
 <body>
 
     <div class="container-left">
-        <label>
+        <div class="margin">
             <p>Nome do titular</p>
             <input type="text" id="inputNome">
-        </label>
-        <label>
+        </div>
+        <div class="margin">
             <p>Numero do cartão</p>
-            <input type="number" id="inputCard">
-        </label>
+            <input type="text" id="inputCard">
+        </div>
 
         <div class="infos">
-            <label>
+            <div class="margin">
                 <p>Data de validade</p>
-                <input type="date" id="inputData">
-            </label>
-            <label>
+                <input type="texts" id="inputData">
+            </div>
+            <div class="margin">
                 <p>CVV</p>
                 <input type="number" id="inputCvv">
-            </label>
+            </div>
+        </div>
 
             <div class="selecao-cores">
                 <p>Selecione a cor de fundo de sua aplicação</p>
                 <div class="cores">
-                    <span class="cor cor1" id="cor1">1</span>
-                    <span class="cor cor2" id="cor2">2</span>
-                    <span class="cor cor3" id="cor3">3</span>
-                    <span class="cor cor4" id="cor4">4</span>
-                    <span class="cor cor5" id="cor5">5</span>
-                    <span class="cor cor6" id="cor6">6</span>
-                    <span class="cor cor7" id="cor7">7</span>
+                    <span class="cor cor1" id="cor1" onclick="primeiraCor()"></span>
+                    <span class="cor cor2" id="cor2" onclick="segundaCor()"></span>
+                    <span class="cor cor3" id="cor3" onclick="terceiraCor()"></span>
+                    <span class="cor cor4" id="cor4" onclick="quartaCor()"></span>
+                    <span class="cor cor5" id="cor5" onclick="quintaCor()"></span>
+                    <span class="cor cor6" id="cor6" onclick="sextaCor()"></span>
+                    <span class="cor cor7" id="cor7" onclick="setimaCor()"></span>
                 </div>
             </div>
 
             <button class="btn" id="gerarImg">Baixar Imagem</button>
  
-        </div>
+       
 
 
     </div>
 
-    <div class="container-right">
+    <div class="container-right" id="divToDownload">
         <h1>Nunca foi tão fácil</h1>
         <h3>Armazenar os seus dados!</h3>
 
@@ -79,7 +80,7 @@
             <h2>DADOS MERAMENTE ILUSTRATIVOS</h2>
         </div>
 
-        <img src="./img/cadeado.png" alt="" srcset="">
+        <img src="./img/cadeado.png" class="img">
 
     </div>
 </body>
